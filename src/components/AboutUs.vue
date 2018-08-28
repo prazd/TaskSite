@@ -18,7 +18,7 @@
 					<div class="wrapper">
 						<div class="persons">
 					<div class="person">
-						<img src="static/img/Ser.jpg" alt="">
+						<img src="static/img/ser.jpg" alt="">
 						<h3>Чернецов Сергей</h3>
 						<p>Front-End разработчик</p>
 					</div>
@@ -33,7 +33,7 @@
 						<p>Android Разработчик(Java)</p>
 					</div>
 					<div class="person">
-						<img src="static/img/SerR.jpg" alt="">
+						<img src="static/img/serR.jpg" alt="">
 						<h3>Коробин Сергей</h3>
 						<p>IOS Разработчик(Swift)</p>
 					</div>
@@ -43,7 +43,7 @@
 						<p>Designer, организатор</p>
 					</div>
 					<div class="person">
-						<img src="static/img/Kir.jpg" alt="">
+						<img src="static/img/kir.jpg" alt="">
 						<h3>Кружков Кирилл</h3>
 						<p>Front-End Разработчик, Designer</p>
 					</div>
