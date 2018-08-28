@@ -1,9 +1,13 @@
 /*Основа*/
 
 * {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Comfortaa", sans-serif;
+    transition: 0.7s all;
 }
-
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 a {
 	text-decoration: none;
 }
@@ -14,10 +18,25 @@ li {
 body {
 	margin: 0;
 	padding: 0;
+
 }
+
+img {
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
 .wrapper {
 	width: 75%;
 	margin: 0 auto;
+}
+
+.main-header p {
+	text-align: center;
+}
+
+.shadow{
+	background: rgba(0,0,0,.5);
+	padding-bottom: 20px;
 }
 
 /*Хедер*/
@@ -31,7 +50,7 @@ header {
 	color: #fff;
 	background: #212326;
 	padding: 5px 0;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -42,13 +61,15 @@ header {
 }
 .logo span {
 	color: #3e84da;
-	transition: 0.3s;
+	transition: 0.4s;
+	font-family: Righteous;
 }
 .logo span:hover{
 	color: #ffcc00;
 }
 .logo h1 {
 	font-size: 28px;
+	font-family: Righteous;
 	margin: 0;
 	padding: 0;
 	line-height: 48px;
@@ -65,12 +86,14 @@ nav {
 .top-nav li {
 	margin-right: 35px;
 }
-
+.icon {
+	display: none;
+}
 .top-nav a {
 	color: #fff;
 	font-weight: 300;
 	font-size: 16px;
-	transition: 0.3s;
+	transition: 0.4s;
 }
 .top-nav a:hover {
 	color: #3e84da;
@@ -78,23 +101,34 @@ nav {
 .main-header {
 	padding-top: 200px;
 	padding-bottom: 140px;
+	height: 90vh;
 	background: url(../img/bg-main.jpg) center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	color: #ffffff;
+	
 }
 
+
 .main-header h2 {
+	font-family: ;
 	font-size: 60px;
 	text-align: center;
 	font-weight: 700;
+	padding-top: 20px;
+	font-family: "Righteous", sans-serif;
 }
 .main-header span {
 	color: #3e84da;
 	transition: 0.3s;
+	font-family: "Righteous", sans-serif;
 }
 .main-header span:hover {
 	color: #ffcc00;
+}
+
+.main-header strong {
+	font-family: Righteous;
 }
 
 .main-header h3 {
@@ -116,13 +150,18 @@ nav {
 .link {
 	display: inline-block;
 	margin: 40px;
-
 }
+
 .link a {
 	color: #ffffff;
 	padding: 25px;
 	border: 1px solid #ffffff;
 	border-radius: 50px;
+	background-color: rgba(100,100,100,.4); 
+}
+
+.link a:hover {
+	background-color: rgba(100,100,100,.8); 
 }
 .project {
 	background-color: #3e84da;
@@ -134,7 +173,7 @@ nav {
 .project h2 {
 	font-size:  55px;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 80px;
 
 }
 
@@ -165,9 +204,7 @@ nav {
 	font-size: 15px;
 	font-weight: 300;
 }
-.about {
 
-}
 .about h2 {
 	margin-top: 100px;
 	font-size: 55px;
@@ -183,9 +220,15 @@ nav {
 .person img {
 	width: 300px;
 	border-radius: 50%;
+	transition: 0.4s;
+}
+.person h3{
+	color: #212326;
+	font-size: 22px;
 }
 .person p {
 	text-align: center;
+	font-size: 16px;
 }
 .persons {
 	text-align: center;
@@ -200,7 +243,7 @@ nav {
 	padding-bottom: 90px;
 }
 .about-person h2 {
-	padding-top: 100px;
+	padding-top: 120px;
 	margin-bottom: 70px;
 }
 .about-us {
@@ -213,15 +256,14 @@ nav {
 	justify-content: space-between;
 }
 .about-us-left {
-	width: 30%;
+	width: 38%;
 	display: inline-block;
 	line-height: 1.6;
 }
 .about-us-right {
-	width: 60%;
+	width: 58%;
 	display: inline-block;
 	height: 400px;
-	background-color: red;
 }
 .contacts {
 	background: url(../img/bg-contact.jpg) center no-repeat;
@@ -234,8 +276,11 @@ nav {
 	font-size: 55px;
 	text-align: center;
 }
+
 .input-contact {
-	padding: 25px 150px;
+	width: 400px;
+	height: 50px;
+	padding: 5px 15px;
 	border: none;
 	border-radius: 10px;
 	display: block;
@@ -249,7 +294,9 @@ nav {
 }
 .contacts-right textarea {
 	margin-top: 12px;
-	padding: 80px 168px;
+	padding: 10px 15px;
+	width: 400px;
+	height: 250px;
 	border: none;
 	border-radius: 10px;
 	font-size: 16px;
@@ -273,9 +320,15 @@ nav {
 	font-size: 16px;
 	margin: 12px 0;
 	border-radius: 10px;
+	cursor: pointer;
+}
+.contacts-left p {
+	font-size: 25px;
+	line-height: 0.9;
+
 }
 footer {
-	padding: 10px;
+	padding: 5px;
 	background: #212326;
 	color: #ffffff;
 }
@@ -289,6 +342,10 @@ footer p{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-around;
+}
+.wrapper-footer p strong {
+	font-family: Righteous;
+
 }
 .footer-nav ul {
 	display: -webkit-flex;
@@ -304,8 +361,11 @@ footer p{
 
 .footer-nav a {
 	color: #fff;
+	transition: 0.4s;
 }
-
+.footer-nav a:hover {
+	color: #ffcc00;
+}
 .footer-links ul {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -322,13 +382,104 @@ footer p{
 
 .footer-links a {
 	color: #fff;
-	transition: 0.3s;
+	transition: 0.4s;
 }
 .footer-links a:hover{
 	color: #ffcc00;
 }
 
+@media screen and (max-width: 1010px){
+	p  {
+		line-height: 1.6;
+	}
+	.top-nav ul {
+		display: none;
+	}
+	.header {
+		min-height: 60px;
+		box-sizing: border-box;
+		margin-bottom: 0;
+		padding: 0;
+	}
+	.main-header {
+		height: 70vh;
+	}
+	.main-header p {
+		line-height: 1.4;
+	}
+	.logo h1 {
+		line-height: 2.6;
 
+
+	}
+	
+	.top-nav  {
+		padding: 0;
+	}
+	.top-nav a.icon{
+		color: #fff;
+		display: block;
+		padding: 0;
+	}
+	.icon p {
+		font-size: 30px;
+		margin: 0;
+		margin-top: 22px;
+		line-height: 1;
+		padding: 0;
+	}
+
+
+	.project-features {
+		display: grid;
+		grid-template-columns: auto;
+	}
+
+	.persons {
+		display: grid;
+		grid-template-columns: auto; 
+	}
+	.contacts-box {
+		display: grid;
+		grid-template-columns: auto;
+		text-align: center;
+	}
+	.contacts-left {
+		text-align: center;
+	}
+    .contacts-button{
+		margin-left: 23%;
+	}
+	.footer-nav {
+		display: none;
+	}
+	.about-us {
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.about-us-right {
+		display: none;
+	}
+	.about-us-left {
+		width: 100%;
+	}
+
+	/*Меню*/
+	.top-nav.open ul {
+		display: block;
+		transition: 0.4s;
+		width: 100%;
+
+	}
+	.top-nav li {
+		display: block;
+		margin-top: 10px;
+		text-align: left;
+			}
+
+
+
+}
 
 
 

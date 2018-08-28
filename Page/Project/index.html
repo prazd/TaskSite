@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>!task</title>
 </head>
@@ -14,19 +16,21 @@
 			    <h1><span>!</span>task</h1>
 		    </div>
 		    <nav>
-			    <div class="top-nav">
+			    <div class="top-nav" id="nav">
+				     <a href="#" id="title" class="icon"><p>&#9776;</p></a>
 				     <ul>
-				         <li><a href="#">Главная</a></li>
-				         <li><a href="#">О нас</a></li>
-				         <li><a href="#">Проект</a></li>
-				         <li><a href="#">Контакты</a></li>
+				         <li><a href="#maine">Главная</a></li>
+				         <li><a href="#project">Проект</a></li>
+				         <li><a href="#about">О нас</a></li>
+				         <li><a href="#contacts">Контакты</a></li>
 			         </ul>
 			     </div>
 		     </nav>
 		</div>
 	</header>
 	<main>
-		<div class="main-header">
+		<div class="main-header" id="maine">
+			<div class="shadow">
 			<div class="wrapper">
 				<h2><span>!</span>task</h2>
 				<h3>Помогаем помогать</h3>
@@ -42,15 +46,16 @@
 			     </div>
 			</div>
 			</div>
+			</div>
 		</div>
-		<div class="project">
+		<div class="project" id="project">
 			<div class="wrapper">
 					<h2>Проект</h2>
 					<div class="project-features">
 						<div class="feature">
 							<h3><i class="fas fa-hands-helping"></i></h3>
 							<h4>Вам нужна помощь</h4> 
-							<p>Достаточно просто скачать приложение и подать нам сигнал. В скором времени свободный волонтер поможет вам с любой задачей?</p>
+							<p>Достаточно просто скачать приложение и подать нам сигнал. В скором времени свободный волонтер поможет вам с любой задачей.</p>
 						</div>
 						<div class="feature">
 							<h3><i class="fas fa-sun"></i></h3>
@@ -72,13 +77,13 @@
 		</div>
 		<div class="about">
 			<div class="wrapper">
-				<h2>О нас</h2>
+				<h2 id="about">О нас</h2>
 				<div class="about-us">
 					<div class="about-us-left">
 						<p>Команда состоит из победителей и призеров олимпиады ИТ-планета, которая и дала толчок для развития проекта. Вместе мы стараемся делать мир лучше, для чего и работаем над приложениями которые будут помогать волонтерам и нуждающемся, найти друг друга. Ранее уже был продемонстрирован и опробован в действии Telegram-бот который связывал волонтеров и инвалидов находящихся в одном районе, но так как бот не сможет воплотить все необходимые возможности, было принято решение разработать приложения под несколько наиболее распространенных платформ. В данный момент наш проект находится в стадии разработки непосредственно самих приложений а так же ведутся переговоры с волонтерскими организациями.</p>
 					</div>
 					<div class="about-us-right">
-						<img src="" alt="">
+						<img src="img/about.jpg" alt="">
 					</div>
 				</div>
 					
@@ -88,9 +93,9 @@
 					<div class="wrapper">
 						<div class="persons">
 					<div class="person">
-						<img src="img/ser.jpg" alt="">
+						<img src="img/Ser.jpg" alt="">
 						<h3>Чернецов Сергей</h3>
-						<p>Front-End разработчик,</p>
+						<p>Front-End разработчик</p>
 					</div>
 					<div class="person">
 						<img src="img/Lexa.jpg" alt="">
@@ -103,7 +108,7 @@
 						<p>Android Разработчик</p>
 					</div>
 					<div class="person">
-						<img src="img/serR.jpg" alt="">
+						<img src="img/SerR.jpg" alt="">
 						<h3>Коробин Сергей</h3>
 						<p>iOS Разработчик</p>
 					</div>
@@ -113,7 +118,7 @@
 						<p>Designer, организатор</p>
 					</div>
 					<div class="person">
-						<img src="img/kir.jpg" alt="">
+						<img src="img/Kir.jpg" alt="">
 						<h3>Кружков Кирилл</h3>
 						<p>Front-End Разработчик, Designer</p>
 					</div>
@@ -121,7 +126,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="contacts">
+		<div class="contacts" id="contacts">
 			<div class="wrapper">
 				<div class="contacts-logo">
 					<h2>Контакты</h2>
@@ -129,16 +134,16 @@
 				</div>
 				<div class="contacts-box">
 				<div class="contacts-left">
-					<p class="mail">Почта</p>
+					<p class="mail">!task@gmail.com</p>
 					<p class="phone">8-800-555-35-35</p>
-					<p class="adress">Проспект Вернадского</p>
+					<p class="adress">Проспект Вернадского д.86</p>
 				</div>
 				<div class="contacts-right">
 					<form action="#">
 						<input class="input-contact"  type="text" value="Введите ваше Имя">
 						<input  class="input-contact" type="text" value="Введите ваш E-mail">
 						<textarea name="" id="">Введите сообщение</textarea>
-						<input  class="contacts-button" type="button" value="Отправить">
+						<button class="contacts-button" type="submit">Отправить </button>
 					</form>
 				</div>
 				</div>
@@ -148,7 +153,15 @@
 	</main>
 	<footer>
 		<div class="wrapper-footer">
-			<p>2018 !task We help to help</p>
+			<p>2018 <strong><span>!</span>task</strong> We help to help</p>
+			<div class="footer-nav">
+				<ul>
+				         <li><a href="#maine">Главная</a></li>
+				         <li><a href="#about">О нас</a></li>
+				         <li><a href="#project">Проект</a></li>
+				         <li><a href="#contacts">Контакты</a></li>
+			         </ul>
+			</div>
 			<div class="footer-links">
 				<ul>
 					<li><a href="#"><i class="fab fa-vk"></i></a></li>
