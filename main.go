@@ -7,6 +7,10 @@ import (
 
 func main() {
 	r := gin.Default()
+	r.LoadHTMLFiles("./dist")
 	r.Use(static.Serve("/", static.LocalFile("./dist", true)))
-	r.Run()
+	r.GET("/", func(c *gin.Context) {
+		c.HTML(200, "index.html", nil)
+	})
+	r.Run(":80")
 }
