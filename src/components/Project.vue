@@ -1,12 +1,13 @@
 <template>
-<div class="project">
+    <main>
+	<div class="project" id="project">
 			<div class="wrapper">
 					<h2>Проект</h2>
 					<div class="project-features">
 						<div class="feature">
 							<h3><i class="fas fa-hands-helping"></i></h3>
 							<h4>Вам нужна помощь</h4> 
-							<p>Достаточно просто скачать приложение и подать нам сигнал. В скором времени свободный волонтер поможет вам с любой задачей?</p>
+							<p>Достаточно просто скачать приложение и подать нам сигнал. В скором времени свободный волонтер поможет вам с любой задачей.</p>
 						</div>
 						<div class="feature">
 							<h3><i class="fas fa-sun"></i></h3>
@@ -26,6 +27,7 @@
 					</div>
 			     </div>
 		</div>
+</main>
 </template>
 
 <script>

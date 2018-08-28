@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-            <header>
-            <div class="header">
-              <div class="logo">
-                  <h1><span>!</span>task</h1>
-                </div>
-                <nav>
-                  <div class="top-nav">
+  	<header>
+		<div class="header">
+			<div class="logo">
+			    <h1><span>!</span>task</h1>
+		    </div>
+		    <nav>
+			    <div class="top-nav" id="nav">
+				     <a href="#" id="title" class="icon"><p>&#9776;</p></a>
                     <ul>
                         <li><router-link to="/">Главная</router-link></li>
                         <li><router-link to="/project">Проект</router-link></li>
@@ -18,9 +19,18 @@
             </div>
           </header>
     <router-view/>
-    <footer>
+ 	<footer>
 		<div class="wrapper-footer">
-			<p>2018 !task We help to help</p>
+			<p>2018 <strong><span>!</span>task</strong> We help to help</p>
+			<div class="footer-nav">
+				<ul>
+				         <!-- <li><a href="#maine">Главная</a></li> -->
+                 <li><a href="/#/">Главная</a></li>
+				         <li><a href="/#/about">О нас</a></li>
+				         <li><a href="/#/project">Проект</a></li>
+				         <li><a href="/#/contacts">Контакты</a></li>   
+			</ul>
+			</div>
 			<div class="footer-links">
 				<ul>
 					<li><a href="#"><i class="fab fa-vk"></i></a></li>
