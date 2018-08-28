@@ -7,7 +7,7 @@
 		    </div>
 		    <nav>
 			    <div class="top-nav" id="nav">
-				     <a href="#" id="title" class="icon"><p>&#9776;</p></a>
+				     <a href="#" id="title" class="icon" v-on:click="Menu()"><p>&#9776;</p></a>
                     <ul>
                         <li><router-link to="/">Главная</router-link></li>
                         <li><router-link to="/project">Проект</router-link></li>
@@ -47,6 +47,16 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods:{
+    Menu(){
+     var menuElem = document.getElementById('nav');
+    var titleElem = menuElem.querySelector('.icon');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
+    }
+  }
 }
 </script>
