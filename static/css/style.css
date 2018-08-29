@@ -62,7 +62,6 @@ header {
 }
 .logo span {
 	color: #3e84da;
-	transition: 0.4s;
 	font-family: Righteous;
 }
 .logo span:hover{
@@ -94,15 +93,14 @@ nav {
 	color: #fff;
 	font-weight: 300;
 	font-size: 16px;
-	transition: 0.4s;
 }
 .top-nav a:hover {
 	color: #3e84da;
 }
 .main-header {
 	padding-top: 200px;
-	padding-bottom: 200px;
-	height: 110%;
+	padding-bottom: 160px;/*
+	height: 110%;*/
 	overflow: scroll;
 	background: url(../img/bg-main.jpg) center no-repeat;
 	-webkit-background-size: cover;
@@ -121,7 +119,6 @@ nav {
 
 
 .main-header h2 {
-	/* font-family: ;  Обратите внимание, если не нужно, то удалите */
 	font-size: 60px;
 	text-align: center;
 	font-weight: 700;
@@ -158,11 +155,10 @@ nav {
 	font-size: 9pt;
 
 }
+
 .link {
 	display: inline-block;
 	margin: 30px;
-	margin-left: 20;
-	margin-right: 20;
 }
 
 .link a {
@@ -173,7 +169,6 @@ nav {
 	border: 1px solid #ffffff;
 	border-radius: 50px;
 	background-color: rgba(100,100,100,.4); 
-	text-overflow: clip;
 }
 
 .link a:hover {
@@ -208,7 +203,6 @@ nav {
 	margin-top: 50px;
 	font-size: 60px;
 	color: #ffffff;
-	transition: 0.3s;
 }
 .feature h3:hover {
 	color: #ffcc00;
@@ -237,7 +231,6 @@ nav {
 .person img {
 	width: 180px;
 	border-radius: 50%;
-	transition: 0.4s;
 }
 .person h3{
 	color: #212326;
@@ -295,7 +288,7 @@ nav {
 }
 
 .input-contact {
-	width: 400px;
+	width: 40vh;
 	height: 50px;
 	padding: 5px 15px;
 	border: none;
@@ -378,7 +371,6 @@ footer p{
 
 .footer-nav a {
 	color: #fff;
-	transition: 0.4s;
 }
 .footer-nav a:hover {
 	color: #ffcc00;
@@ -399,7 +391,6 @@ footer p{
 
 .footer-links a {
 	color: #fff;
-	transition: 0.4s;
 }
 .footer-links a:hover{
 	color: #ffcc00;
@@ -426,10 +417,17 @@ footer p{
 	}
 	.logo h1 {
 		line-height: 2.6;
-
-
 	}
 	
+	.contacts-right textarea {
+/*		margin-top: 12px;
+		padding: 10px 10px;*/
+		width: 40vh;
+		height: 15vh;
+		margin-top: 12px;
+		left: -60px;
+	}
+
 	.top-nav  {
 		padding: 0;
 	}
@@ -456,6 +454,15 @@ footer p{
 		display: grid;
 		grid-template-columns: auto; 
 	}
+
+	.about-person h2 {
+		font-size: 27pt;
+	}
+
+	.contacts-logo h2{
+		font-size: 27pt;
+	}
+
 	.contacts-box {
 		display: grid;
 		grid-template-columns: auto;
@@ -463,6 +470,7 @@ footer p{
 	}
 	.contacts-left {
 		text-align: center;
+		font-size: 2pt; 
 	}
     .contacts-button{
 		margin-left: 23%;
@@ -497,3 +505,4 @@ footer p{
 
 
 }
+
