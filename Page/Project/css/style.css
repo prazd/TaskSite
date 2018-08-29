@@ -34,7 +34,8 @@ img {
 	text-align: center;
 }
 
-.shadow{
+.shadow{/*
+	height: 120vh;*/
 	background: rgba(0,0,0,.5);
 	padding-bottom: 20px;
 }
@@ -100,14 +101,23 @@ nav {
 }
 .main-header {
 	padding-top: 200px;
-	padding-bottom: 140px;
-	height: 90vh;
+	padding-bottom: 200px;
+	height: 110%;
+	overflow: scroll;
 	background: url(../img/bg-main.jpg) center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	color: #ffffff;
 	
 }
+
+/* хром, сафари */
+.main-header::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.main-header { -ms-overflow-style: none; }
+
+.main-header { overflow: -moz-scrollbars-none; }
 
 
 .main-header h2 {
@@ -218,7 +228,7 @@ nav {
 }
 
 .person img {
-	width: 300px;
+	width: 180px;
 	border-radius: 50%;
 	transition: 0.4s;
 }
