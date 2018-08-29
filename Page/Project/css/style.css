@@ -155,24 +155,31 @@ nav {
 }
 .main-links {
 	text-align: center;
+	font-size: 9pt;
 
 }
 .link {
 	display: inline-block;
-	margin: 40px;
+	margin: 30px;
+	margin-left: 20;
+	margin-right: 20;
 }
 
 .link a {
 	color: #ffffff;
-	padding: 25px;
+	padding: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	border: 1px solid #ffffff;
 	border-radius: 50px;
 	background-color: rgba(100,100,100,.4); 
+	text-overflow: clip;
 }
 
 .link a:hover {
 	background-color: rgba(100,100,100,.8); 
 }
+
 .project {
 	background-color: #3e84da;
 	padding-top: 30px;
