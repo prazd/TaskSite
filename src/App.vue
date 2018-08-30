@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  	<header>
+ 	<header>
 		<div class="header">
 			<div class="logo">
 			    <h1><span>!</span>task</h1>

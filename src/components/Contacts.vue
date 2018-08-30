@@ -1,6 +1,6 @@
 <template>
 <main>
-	<div class="contacts" id="contacts">
+		<div class="contacts" id="contacts">
 			<div class="wrapper">
 				<div class="contacts-logo">
 					<h2>Контакты</h2>
@@ -14,9 +14,9 @@
 				</div>
 				<div class="contacts-right">
 					<form action="#">
-						<input class="input-contact"  type="text" value="Введите ваше Имя">
-						<input  class="input-contact" type="text" value="Введите ваш E-mail">
-						<textarea name="" id="">Введите сообщение</textarea>
+						<input class="input-contact"  type="text" placeholder="Введите ваше Имя">
+						<input  class="input-contact" type="text" required="Поле обязательно для заполнения" placeholder="Введите ваш E-mail">
+						<textarea name="" id="" required="Поле обязательно для заполнения" placeholder="Введите сообщение"></textarea>
 						<button class="contacts-button" type="submit">Отправить </button>
 					</form>
 				</div>
