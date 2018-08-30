@@ -1,14 +1,6 @@
-$(document).ready(function(){
-	$('.popup-btn').on('click', function(event){
-		event.preventDefault();
-		$('.popup').show();
-	});
-	$('.popup-close').on('click', function(event){
-		event.preventDefault();
-		$('.popup').hide();
-	});
-	$('.icon').on('click', function(event){
-		event.preventDefault();
-		$('.top-nav').toggleClass('top-nav-active');
-	});
-});
+  var menuElem = document.getElementById('nav');
+    var titleElem = menuElem.querySelector('.icon');
+
+    titleElem.onclick = function() {
+      menuElem.classList.toggle('open');
+    };
