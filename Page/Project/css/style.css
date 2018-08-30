@@ -2,7 +2,7 @@
 
 * {
 	font-family: "Comfortaa", sans-serif;
-    transition: 0.7s all;
+    transition: 0.4s all;
 }
 :active, :hover, :focus {
     outline: 0;
@@ -24,8 +24,6 @@ body {
 img {
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
-
-
 
 .wrapper {
 	width: 75%;
@@ -86,8 +84,9 @@ nav {
 }
 
 .top-nav li {
-	margin-right: 35px;
+	margin-right: 40px;
 }
+
 .icon {
 	display: none;
 }
@@ -109,6 +108,16 @@ nav {
 	background-size: cover;
 	color: #ffffff;
 	
+}
+li .enter {
+	border: 1px solid #ffcc00;
+	padding: 8px 28px;
+	background: #ffcc00;
+	color: #000000;
+	border-radius: 50px;
+}
+li .enter:hover{
+	color: #ffffff;
 }
 
 /* хром, сафари */
@@ -152,10 +161,12 @@ nav {
 .main-header p {
 	font-size: 22px;
 	font-weight: 300;
+	line-height: 1.7;
 }
 .main-links {
 	text-align: center;
 	font-size: 9pt;
+	margin-bottom: 40px;
 
 }
 
@@ -217,6 +228,7 @@ nav {
 .feature p {
 	font-size: 15px;
 	font-weight: 300;
+	line-height: 1.5;
 }
 
 .about h2 {
@@ -232,7 +244,7 @@ nav {
 }
 
 .person img {
-	width: 180px;
+	width: 250px;
 	border-radius: 50%;
 }
 .person h3{
@@ -267,9 +279,10 @@ nav {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 40px;
 }
 .about-us-left {
-	width: 38%;
+	width: 40%;
 	display: inline-block;
 	line-height: 1.6;
 }
@@ -324,8 +337,14 @@ nav {
 	font-weight: 300;
 }
 
+
+.contacts-logo h2 {
+	font-size: 55px;
+	text-align: center;
+}
+
 .input-contact {
-	width: 40vh;
+	width: 400px;
 	height: 50px;
 	padding: 5px 15px;
 	border: none;
@@ -339,9 +358,6 @@ nav {
 	text-align: center;
 	font-size: 28px;
 }
-
-
-
 .contacts-right textarea {
 	margin-top: 12px;
 	padding: 10px 15px;
@@ -372,19 +388,9 @@ nav {
 	border-radius: 10px;
 	cursor: pointer;
 }
-
-.reg-button {
-	display: block;
-	background-color: #ffcc00;
-	border: none;
-	padding: 20px 60px;
-	font-size: 16px;
-	margin: 12px 0;
-	margin-bottom: 50px;
-	border-radius: 10px;
-	cursor: pointer;
+.contacts-button:hover {
+	color: #fff;
 }
-
 .contacts-left p {
 	font-size: 25px;
 	line-height: 0.9;
@@ -449,6 +455,113 @@ footer p{
 	color: #ffcc00;
 }
 
+
+/*Модальное окно*/
+.popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(0, 0, 0,0.5);
+	transition: 0.4s;
+}
+.popup-content {
+	left: 50%;
+	top: 20%;
+	background-color: #fff;
+	transform: translateX(-50%);
+	width: 400px;
+	height: 600px;
+	position: fixed;
+	font-size: 20px;
+	text-align: center;
+	background-color: #3e84da;
+	border: 1px solid #212326; 
+	color: #ffffff;
+}
+.popup-form{
+	margin-top: 30px;
+
+
+}
+.popup-close {
+	position: absolute;
+	color: #000;
+	background-color: transparent;
+	border: none;
+	font-size: 32px;
+	right: 14px;
+	top: 14px;
+}
+.popup-close:hover {
+	color: #fff;
+
+}
+.popup-form-btn {
+	margin-top: 15px;
+	width: 280px;
+	height: 38px;
+	text-align: center;
+	left: 50%;
+	border-radius: 5px;
+	border: none;
+	text-align: left;
+	padding: 2px 15px;
+}
+.login-btn {
+	background-color: #ffcc00;
+	border: none;
+	width: 100px;
+	height: 40px;
+	border-radius: 50px;
+	text-align: center;
+	margin-top: 50px;
+	cursor: pointer;
+}
+.login-btn:hover {
+	opacity: 0.9;
+
+}
+.reg-btn {
+	width: 200px;
+	margin-top: 0px;
+}
+
+	.reg-button {
+		display: block;
+		background-color: #ffcc00;
+		border: none;
+		padding: 20px 60px;
+		font-size: 16px;
+		margin: 12px 0;
+		margin-bottom: 50px;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+.popup-content a {
+	display: inline-block;
+	margin: 30px auto;
+	color: #fff;
+	text-align: center;
+}
+.popup-content p {
+	margin-top: 30px;
+}
+.popup-header{
+	margin-top: 40px;
+	font-size: 30px;
+}
+.popup-content a:hover {
+	color: #ffcc00;
+	opacity: 0.9;
+}
+
 .radio {
 	color: #fff;
 	margin: 15px;
@@ -456,117 +569,109 @@ footer p{
 	vertical-align: 0px;
 }
 
-@media screen and (max-width: 1010px){
-	p  {
-		line-height: 1.6;
+@media screen and (max-width: 1020px) {
+	.top-nav {
+		position: relative;
 	}
 	.top-nav ul {
 		display: none;
+		transition: 0.5s;
 	}
-	.header {
-		min-height: 60px;
-		box-sizing: border-box;
-		margin-bottom: 0;
-		padding: 0;
-	}
-	.main-header {
-		height: 70vh;
-	}
-	.main-header p {
-		line-height: 1.4;
-	}
-	.logo h1 {
-		line-height: 2.6;
-	}
-	
-	.contacts-right textarea {
-/*		margin-top: 12px;
-		padding: 10px 10px;*/
-		align-items: left;
-		width: 40vh;
-		height: 15vh;
-		margin-top: 12px;
-		left: -60px;
-	}
-
-	.top-nav  {
-		padding: 0;
-	}
-	.top-nav a.icon{
-		color: #fff;
+	.icon {
+		right: 10%;
+		top: 8px;
+		position: fixed;
 		display: block;
-		padding: 0;
+		font-size: 35px;
 	}
 	.icon p {
-		font-size: 30px;
-		margin: 0;
-		margin-top: 22px;
-		line-height: 1;
-		padding: 0;
+	   font-size: 30px;
+	   margin: 0;
 	}
-
-
+	.main-header{
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.main-links {
+		margin-bottom: 50px;
+	}
+	.link {
+		margin-top: 50px;
+	}
 	.project-features {
 		display: grid;
 		grid-template-columns: auto;
 	}
-
-	.persons {
-		display: grid;
-		grid-template-columns: auto; 
-	}
-
-	.about-person h2 {
-		font-size: 27pt;
-	}
-
-	.contacts-logo h2{
-		font-size: 27pt;
-	}
-
-	.contacts-box {
-		display: grid;
-		grid-template-columns: auto;
-		text-align: center;
-	}
-	.contacts-left {
-		text-align: center;
-		font-size: 2pt; 
-	}
-    .contacts-button{
-		margin-left: 23%;
-	}
-	.footer-nav {
-		display: none;
-	}
-
-	.footer-links ul {
-		display: block;
-	}
-
 	.about-us {
 		display: grid;
 		grid-template-columns: auto;
 	}
 	.about-us-right {
 		display: none;
+
 	}
 	.about-us-left {
 		width: 100%;
 	}
+	.persons {
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.person {
+		margin-top: 50px;
+	}
+	.person img {
+		width: 200px;
+	}
+	.contacts-box {
+		display: grid;
+		grid-template-columns: auto;
+		text-align: center;
+	}
+	.contacts-right{
+		margin-top: 50px;
+	}
+	.contacts-button{
+		left: 20%;
+		transform: translateX(40%);
+		margin-top: 40px;
+	}
 
-	/*Меню*/
-	.top-nav.open ul {
-		display: block;
-		transition: 0.4s;
-		width: 100%;
+
+	.footer-nav{
+		display: none;
+		padding: 0;
+	}
+	.wrapper-footer {
+		display: grid;
+		grid-template-columns: auto auto;
+		padding: 0;
+	}
+	.footer-links li {
+		font-size: 25px;
+	}
+	.wrapper-footer p {
+		font-size: 15px;
+		line-height: 2;
 
 	}
-	.top-nav li {
-		display: block;
-		margin-top: 10px;
-		text-align: left;
-			}
+	.top-nav-active ul {
+		margin-top: 40px;
+		display: inline-block;
+	
+	}
+	.top-nav-active li {
+		text-align: right;
+		margin-top: 25px;
+
+		margin-right: 0px;
+		transition: 0.5s;
+
+	}
+
+	.top-nav-active li a.popup-btn {
+		margin-top: 50px;
+	}
 
 	.input-reg {
 		width: 220px;
@@ -612,4 +717,40 @@ footer p{
 		text-align: left;
 	}
 
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
