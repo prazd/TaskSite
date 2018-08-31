@@ -2,7 +2,7 @@
 
 * {
 	font-family: "Comfortaa", sans-serif;
-    transition: 0.6s all;
+    transition: 0.4s all;
 }
 :active, :hover, :focus {
     outline: 0;
@@ -75,7 +75,7 @@ header {
 	line-height: 48px;
 }
 nav {
-	margin-right: 10%;
+	margin-right: 5%;
 }
 
 .top-nav ul {
@@ -318,6 +318,16 @@ li .enter:hover{
 
 #reg-logo {
 	color: #fff;
+	text-shadow: 0 0 20px rgba(0,0,0,0.5);; 
+	transition: 0.7s;
+}
+
+#reg-logo h2:hover {
+	text-shadow: 0 0 20px rgba(200,200,200,.6);
+}
+
+#reg-logo p:hover {
+	text-shadow: 0 0 20px rgba(200,200,200,.6);
 }
 
 .contacts-logo h2 {
@@ -512,8 +522,6 @@ footer p{
 }
 .popup-form{
 	margin-top: 20px;
-
-
 }
 .popup-close {
 	position: absolute;
@@ -538,6 +546,7 @@ footer p{
 	border: none;
 	text-align: left;
 	padding: 2px 15px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 .login-btn {
 	background-color: #ffcc00;
@@ -546,7 +555,7 @@ footer p{
 	height: 40px;
 	border-radius: 50px;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 35px;
 	cursor: pointer;
 }
 .login-btn:hover {
@@ -556,6 +565,7 @@ footer p{
 .reg-btn {
 	width: 200px;
 	margin-top: 0px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 
@@ -641,7 +651,7 @@ footer p{
 	}
 
 	.about-person h2 {
-		font-size: 27pt;
+		font-size: 25pt;
 	}
 
 	.contacts-logo h2{
@@ -760,6 +770,23 @@ footer p{
 		margin-bottom: 50px
 		padding-left: -30px;
 		text-align: left;
+	}
+
+	.popup-form-btn {
+		width: 40vh;
+	}
+
+	.popup-header{
+		margin-top: 25px;
+		font-size: 28px;
+	}
+
+	.popup-content p {
+		font-size: 10pt; 
+	}
+
+	.popup-form{
+		margin-top: 0px;
 	}
 
 	
