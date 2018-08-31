@@ -42,7 +42,7 @@ export default {
   },
   methods:{
 	  FeedBack(){
-		  axios.post("http://localhost/feedback",{
+		  axios.post("http://task.pythonanywhere.com/feedback",{
 			  name:this.name,
 			  email:this.email,
 			  text:this.text
