@@ -5,6 +5,7 @@
 				<div class="contacts-logo">
 					<h2>Контакты</h2>
 					<p>Мы ждем ваших вопросов</p>
+					<p>{{response}}</p>
 				</div>
 				<div class="contacts-box">
 				<div class="contacts-left">
@@ -13,12 +14,13 @@
 					<p class="adress">Проспект Вернадского д.86</p>
 				</div>
 				<div class="contacts-right">
-					<form action="#">
-						<input class="input-contact"  type="text" placeholder="Введите ваше Имя">
-						<input  class="input-contact" type="text" required="Поле обязательно для заполнения" placeholder="Введите ваш E-mail">
-						<textarea name="" id="" required="Поле обязательно для заполнения" placeholder="Введите сообщение"></textarea>
-						<button class="contacts-button" type="submit">Отправить </button>
+					<form>
+						<input v-model="name" class="input-contact"  type="text" placeholder="Введите ваше Имя">
+						<input v-model="email" class="input-contact" type="text" required="Поле обязательно для заполнения" placeholder="Введите ваш E-mail">
+						<textarea v-model="text" name="" id="" required="Поле обязательно для заполнения" placeholder="Введите сообщение"></textarea>
+					
 					</form>
+						<button v-on:click="FeedBack()" class="contacts-button" type="button">Отправить </button>
 				</div>
 				</div>
 			</div>
@@ -27,8 +29,33 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
-  name: 'Contacts'
+  name: 'Contacts',
+  data(){
+	  return {
+		  name:"",
+		  email:"",
+		  text:"",
+		  response:""
+	  }
+  },
+  methods:{
+	  FeedBack(){
+		  axios.post("http://localhost:5000/feedback",{
+			  name:this.name,
+			  email:this.email,
+			  text:this.text
+		  }).then(res=>{
+			  this.response = res.data.info
+			  this.name = ""
+			  this.email = ""
+			  this.text = ""
+		  }
+			  
+		  )
+	  }
+  }
 }
 </script>
 

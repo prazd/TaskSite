@@ -21,7 +21,7 @@ def FeedBack():
     if len(name) == 0 or len(email) == 0 or len(text) == 0:
         return jsonify(info="Заполните пожалуйста все поля")
     else:
-            vk = vk_api.VkApi(login=os.getenv("Vklogin"),password=os.getenv("Vkpass"))
+            vk = vk_api.VkApi(login="",password="")
             vk.auth()
             vk.method('messages.send',{'chat_id':84,'message':"Имя:"+name+"\n"+"Почта:"+email+"\n"+"Сообщение:"+text})
             return  jsonify(info="Спасибо большое!\nМы обязательно с Вами свяжемся)")
