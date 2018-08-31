@@ -42,7 +42,7 @@ export default {
   },
   methods:{
 	  FeedBack(){
-		  axios.post("http://localhost:5000/feedback",{
+		  axios.post("http://localhost/feedback",{
 			  name:this.name,
 			  email:this.email,
 			  text:this.text
