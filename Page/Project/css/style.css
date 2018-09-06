@@ -2,7 +2,7 @@
 
 * {
 	font-family: "Comfortaa", sans-serif;
-    transition: 0.4s all;
+    transition: 0.5s all;
 }
 :active, :hover, :focus {
     outline: 0;
@@ -102,13 +102,19 @@ nav {
 	padding-top: 200px;
 	padding-bottom: 160px;/*
 	height: 110%;*/
-	overflow: scroll;
+	overflow: scroll;/*
 	background: url(../img/bg-main.jpg) center no-repeat;
-	-webkit-background-size: cover;
+	-webkit-background-size: cover;*/
 	background-size: cover;
 	color: #ffffff;
-	
 }
+
+.parallax--bg{
+	background: url(../img/bg-main.jpg) center no-repeat;
+	-webkit-background-size: cover;
+	transition: initial;
+}
+
 li .enter {
 	border: 1px solid #ffcc00;
 	padding: 8px 28px;
@@ -678,12 +684,12 @@ footer p{
 	}
 
 	.input-contact {
-		width: 35vh;
+		width: 50vw;
 		font-size: 10pt; 
 	}
 
 	.contacts-right textarea {
-		width: 40vh;
+		width: 50vw;
 		height: 15vh;
 		font-size: 11pt;
 	}
