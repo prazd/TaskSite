@@ -7,20 +7,16 @@
 					<p>Мы ждем ваших вопросов</p>
 					<p>{{response}}</p>
 				</div>
-				<div class="contacts-box">
-				<div class="contacts-left">
-					<p class="mail">!task@gmail.com</p>
-					<p class="phone">8-800-555-35-35</p>
-					<p class="adress">Проспект Вернадского д.86</p>
-				</div>
+				<div class="contacts-box">		
 				<div class="contacts-right">
 					<form>
 						<input v-model="name" class="input-contact"  type="text" placeholder="Введите ваше Имя">
 						<input v-model="email" class="input-contact" type="text" required="Поле обязательно для заполнения" placeholder="Введите ваш E-mail">
 						<textarea v-model="text" name="" id="" required="Поле обязательно для заполнения" placeholder="Введите сообщение"></textarea>
 					
-					</form>
+					</form><center>
 						<button v-on:click="FeedBack()" class="contacts-button" type="button">Отправить </button>
+		     	</center>
 				</div>
 				</div>
 			</div>

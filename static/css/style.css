@@ -25,6 +25,16 @@ img {
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+.soon{
+	background-size: 100%;
+	background: url(../img/soon.jpg) center no-repeat;
+	padding-top: 400px;
+	padding-bottom: 500px;
+	-webkit-background-size: cover;
+	color: #ffffff;
+}
+
+
 .wrapper {
 	width: 75%;
 	margin: 0 auto;
@@ -179,6 +189,7 @@ nav {
 	background-color: #3e84da;
 	padding-top: 30px;
 	padding-bottom: 90px;
+	background-size:100%;
 	color: #ffffff;
 }
 
@@ -501,6 +512,7 @@ footer p{
 		margin-top: 10px;
 		text-align: left;
 			}
+
 
 
 

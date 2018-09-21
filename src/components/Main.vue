@@ -11,10 +11,10 @@
                <strong><span>!</span>task</strong> это сервис который поможет вам! </p> <br>
 			<div class="main-links">
 			     <div class="link">
-				     <a href="#">Скачать для iOS</a>
+				     <a href="#/soon">Скачать для iOS</a>
 			     </div>
 			     <div class="link">
-				     <a href="#">Скачать для  Android</a>
+				     <a href="#/soon">Скачать для  Android</a>
 	     		     </div>
 		    	</div>
 		     </div>

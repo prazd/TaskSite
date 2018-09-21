@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.676e6d79917bc0ba7976cdfd62cb18f9.css"],"names":[],"mappings":"AAIA,aACC,kBAAmB,CACnB,AAED,WACE,aAAiB,CAClB","file":"app.676e6d79917bc0ba7976cdfd62cb18f9.css","sourcesContent":["\n.Tonya{\n\tmargin-left: -480px;\n}\n.Ilya{\n\tmargin-left:-480px;\n}\n\n.soon-text{\n  color: chartreuse\n}\n"]}

@@ -3,7 +3,7 @@
 	<div class="project" id="project">
 			<div class="wrapper">
 					<h2>Проект</h2>
-					<div class="project-features">
+					<div class="project-features contacts-right">
 						<div class="feature">
 							<h3><i class="fas fa-hands-helping"></i></h3>
 							<h4>Вам нужна помощь</h4> 
@@ -26,6 +26,7 @@
 						</div>
 					</div>
 			     </div>
+				 <br><br><br><br><br><br><br>
 		</div>
 </main>
 </template>

@@ -24,7 +24,6 @@
 			<p>2018 <strong><span>!</span>task</strong> We help to help</p>
 			<div class="footer-nav">
 				<ul>
-				         <!-- <li><a href="#maine">Главная</a></li> -->
                  <li><a href="/#/">Главная</a></li>
 				         <li><a href="/#/about">О нас</a></li>
 				         <li><a href="/#/project">Проект</a></li>
