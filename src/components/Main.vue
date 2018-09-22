@@ -11,10 +11,10 @@
                <strong><span>!</span>task</strong> это сервис который поможет вам! </p> <br>
 			<div class="main-links">
 			     <div class="link">
-				     <a href="http://localhost:5000/soon">Скачать для iOS</a>
+				     <a href="http://task.pythonanywhere.com/soon">Скачать для iOS</a>
 			     </div>
 			     <div class="link">
-				     <a href="#/soon">Скачать для  Android</a>
+				    <a href="http://task.pythonanywhere.com/soon">Скачать для  Android</a>
 	     		     </div>
 		    	</div>
 		     </div>
