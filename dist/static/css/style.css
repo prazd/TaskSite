@@ -26,12 +26,25 @@ img {
 }
 
 .soon{
-	background-size: 100%;
-	background: url(../img/soon.jpg) center no-repeat;
-	padding-top: 400px;
-	padding-bottom: 500px;
-	-webkit-background-size: cover;
-	color: #ffffff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-ms-flex-line-pack: center;
+		align-content: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	padding: 12px;
+	background: #84c7a7;
+	background: -webkit-linear-gradient(315deg, #3023ae 0%, #53a0fe 50%, #b4ed50 100%);
+	background: linear-gradient(135deg, #3023ae 0%, #53a0fe 50%, #b4ed50 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$indigo', endColorstr='$lime',GradientType=1 );
+	font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 
@@ -44,13 +57,11 @@ img {
 	text-align: center;
 }
 
-.shadow{/*
-	height: 120vh;*/
+.shadow{
 	background: rgba(0,0,0,.5);
 	padding-bottom: 20px;
 }
 
-/*Хедер*/
 header {
 	width: 100%;
 	top: 0;
@@ -431,8 +442,6 @@ footer p{
 	}
 	
 	.contacts-right textarea {
-/*		margin-top: 12px;
-		padding: 10px 10px;*/
 		width: 40vh;
 		height: 15vh;
 		margin-top: 12px;
@@ -512,9 +521,5 @@ footer p{
 		margin-top: 10px;
 		text-align: left;
 			}
-
-
-
-
 }
 

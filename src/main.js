@@ -5,7 +5,7 @@ import Main from '@/components/Main'
 import AboutUs from '@/components/AboutUs'
 import Project from '@/components/Project'
 import Contacts from '@/components/Contacts'
-import Soon from '@/components/Soon'
+// import Soon from '@/components/Soon'
 Vue.use(Router)
 
 let routes = [
@@ -13,7 +13,7 @@ let routes = [
   {path:"/about",component:AboutUs},
   {path:"/project",component:Project},
   {path:"/contacts",component:Contacts},
-  {path:"/soon", component:Soon}
+  // {path:"/soon", component:Soon}
 ]
 
 let router = new Router({routes})

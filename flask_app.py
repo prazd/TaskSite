@@ -10,6 +10,10 @@ app = Flask(__name__,
 def Index():
     return render_template("index.html")
 
+@app.route('/soon')
+def Soon():
+    return render_template("soon/index.html")
+
 @app.route("/feedback", methods=["POST"])
 def FeedBack():
     print(request.is_json)
@@ -21,7 +25,7 @@ def FeedBack():
     if len(name) == 0 or len(email) == 0 or len(text) == 0:
         return jsonify(info="Заполните пожалуйста все поля")
     else:
-            vk = vk_api.VkApi(login="",password="")
+            vk = vk_api.VkApi(login="+79167802754",password="19982468fktr")
             vk.auth()
             vk.method('messages.send',{'chat_id':84,'message':"Имя:"+name+"\n"+"Почта:"+email+"\n"+"Сообщение:"+text})
             return  jsonify(info="Спасибо большое!\nМы обязательно с Вами свяжемся)")
