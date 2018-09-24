@@ -73,4 +73,14 @@ export default {
 .Ilya{
 	margin-left:-480px;
 }
+
+@media screen and (min-width:300px) and (max-width: 1000px){
+.Tonya{
+	margin-left: 0px;
+	margin-top:-170px;
+}	
+.Ilya{
+	margin-left: 0px;
+}
+}
 </style>
