@@ -38,7 +38,7 @@ export default {
   },
   methods:{
 	  FeedBack(){
-		  axios.post("http://task.pythonanywhere.com/feedback",{
+		  axios.post("https://task.pythonanywhere.com/feedback",{
 			  name:this.name,
 			  email:this.email,
 			  text:this.text
