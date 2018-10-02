@@ -13,24 +13,56 @@
 <body>
 	<header>
 		<div class="header">
-			<div class="logo">
-			    <h1><span>!</span>task</h1>
-		    </div>
 		    <nav>
 			    <div class="top-nav" id="nav">
-				     
-				     <ul>
-				         <li><a href="#maine">Главная</a></li>
-				         <li><a href="#project">Проект</a></li>
-				         <li><a href="#about">О нас</a></li>
-				         <li><a href="#contacts">Контакты</a></li>
-				         <li><a href="#" class="enter popup-btn">Вход</a></li>
-			         </ul>
-			         <a href="#" id="title" class="icon"><p>&#9776;</p></a>
+					
+						<div class="container">
+							<!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+							<input id="toggle" type="checkbox">
+					
+							<!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+						
+							<!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+							<label class="toggle-container" for="toggle">
+								<!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+								<span class="button button-toggle"></span>
+							</label>
+						
+							<!-- The nav menu -->
+							<nav class="nav">
+								<a class="nav-item" href="">Главная</a>
+								<a class="nav-item" href="">Проект</a>
+								<a class="nav-item" href="">О нас</a>
+								<a class="nav-item" href="">Контакты</a>
+								<a href="#" class="nav-item enter popup-btn">Вход</a>
+							</nav>
+
+						</div>
 			     </div>
 		     </nav>
+			 <div class="logo" id="logo2">
+					<h1><span>!</span>task</h1>
+				</div>
+			 <nav id="two">
+					<div class="top-nav" id="nav">
+						<div class="containerTwo">
+
+		
+							<ul>
+								<li><a href="#maine">Главная</a></li>
+								<li><a href="#project">Проект</a></li>
+								<li><a href="#about">О нас</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+								<li><a href="#" class="enter popup-btn">Вход</a></li>
+							</ul>
+				   </div>
+				   </div>
+				</nav>
 		</div>
-	</header>
+
+		</header>
+
+	
 	<main>
 		<div class="main-header parallax--bg" id="maine">
 			<div class="shadow">
