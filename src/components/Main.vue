@@ -1,7 +1,7 @@
 <template>
 <div>    
 	<main>
-	  <div class="main-header" id="maine">
+	  <div class="main-header parallax--bg" id="maine">
 		<div class="shadow">
 			<div class="wrapper">
 				<h2><span>!</span>task</h2>
