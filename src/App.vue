@@ -13,7 +13,7 @@
 								<a class="nav-item" href="/#/">Главная</a>
 								<a class="nav-item" href="/#/project">Проект</a>
 								<a class="nav-item" href="/#/about">О нас</a>
-								<a class="nav-item" href="/#/contacts">Контакты</a>
+								<a class="nav-item" href="/#/contacts">Обратная связь</a>
 							</nav>
 						</div>
 			     </div>
@@ -28,7 +28,7 @@
 								<li><a href="/#/">Главная</a></li>
 								<li><a href="/#/project">Проект</a></li>
 								<li><a href="/#/about">О нас</a></li>
-								<li><a href="/#/contacts">Контакты</a></li>
+								<li><a href="/#/contacts">Обратная связь</a></li>
 							</ul>
 				   </div>
 				   </div>
@@ -45,15 +45,12 @@
                  <li><a href="/#/">Главная</a></li>
 				         <li><a href="/#/about">О нас</a></li>
 				         <li><a href="/#/project">Проект</a></li>
-				         <li><a href="/#/contacts">Контакты</a></li>   
+				         <li><a href="/#/contacts">Обратная связь</a></li>   
 			</ul>
 			</div>
 			<div class="footer-links">
 				<ul>
-					<li><a href="#"><i class="fab fa-vk"></i></a></li>
-					<li><a href="#"><i class="fab fa-telegram"></i></a></li>
-					<li><a href="#"><i class="fab fa-github"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="https://github.com/prazd/task"><i class="fab fa-github"></i></a></li>
 				</ul>
 			
 			</div>

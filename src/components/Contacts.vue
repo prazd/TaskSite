@@ -3,7 +3,7 @@
 		<div class="contacts" id="contacts">
 			<div class="wrapper">
 				<div class="contacts-logo">
-					<h2>Контакты</h2>
+					<h2>Обратная связь</h2>
 					<p>Мы ждем ваших вопросов</p>
 					<p>{{response}}</p>
 				</div>
