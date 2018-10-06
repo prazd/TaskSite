@@ -14,6 +14,7 @@
 								<a class="nav-item" href="/#/project">Проект</a>
 								<a class="nav-item" href="/#/about">О нас</a>
 								<a class="nav-item" href="/#/contacts">Обратная связь</a>
+								<a class="nav-item" href="/#/ios">FAQ</a>
 							</nav>
 						</div>
 			     </div>
@@ -29,6 +30,7 @@
 								<li><a href="/#/project">Проект</a></li>
 								<li><a href="/#/about">О нас</a></li>
 								<li><a href="/#/contacts">Обратная связь</a></li>
+								<li><a href="/#/ios">FAQ</a></li>
 							</ul>
 				   </div>
 				   </div>
@@ -41,11 +43,12 @@
 		<div class="wrapper-footer">
 			<p>2018 <strong><span>!</span>task</strong> We help to help</p>
 			<div class="footer-nav">
-				<ul>
-                 <li><a href="/#/">Главная</a></li>
+			<ul>
+                         <li><a href="/#/">Главная</a></li>
 				         <li><a href="/#/about">О нас</a></li>
 				         <li><a href="/#/project">Проект</a></li>
 				         <li><a href="/#/contacts">Обратная связь</a></li>   
+						 <li><a href="/#/ios">FAQ</a></li> 
 			</ul>
 			</div>
 			<div class="footer-links">

@@ -381,6 +381,9 @@ nav {
 .top-nav a:hover {
 	color: #3e84da;
 }
+/* .back{
+	/* background: url(./static/img/back.jpg) center no-repeat; */
+	/* background-image: url(static/img/back.jpg) */
 .main-header {
 	padding-top: 200px;
 	padding-bottom: 160px;/*
