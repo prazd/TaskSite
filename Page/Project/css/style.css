@@ -899,6 +899,10 @@ footer p{
 
 @media screen and (max-width: 1020px) {
 
+	video {
+		width: 350;
+	}
+
 	.header {
 		justify-content: flex-end;
 	}
