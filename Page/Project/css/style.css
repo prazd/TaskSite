@@ -25,6 +25,10 @@ img {
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+video {
+	z-index: -10;
+}
+
 #two {
 	right: 10%;
 }
@@ -48,7 +52,13 @@ img {
 header {
 	width: 100%;
 	top: 0;
+	z-index: 2;
 }
+
+.faq-img {
+	justify-content: space-between;
+}
+
 .header {
 	display: flex;
 	justify-content: space-evenly;
@@ -1097,10 +1107,5 @@ footer p{
 	.popup-form{
 		margin-top: 0px;
 	}
-
-	/* Basic styles */
-  
-  
-
 	
 }
