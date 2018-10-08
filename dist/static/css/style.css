@@ -25,6 +25,10 @@ img {
 	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+video {
+	z-index: -10;
+}
+
 #two {
 	right: 10%;
 }
@@ -48,7 +52,14 @@ img {
 header {
 	width: 100%;
 	top: 0;
+	z-index: 2;
 }
+
+.faq-img {
+	justify-content: space-between;
+	margin-left: 300px;
+}
+
 .header {
 	display: flex;
 	justify-content: space-evenly;
@@ -141,7 +152,7 @@ header{
   }
   
   #toggle:checked ~ .nav .nav-item {
-	color: #EC7263;
+	color: #3e84da;
 	letter-spacing: 0;
 	height: 30px;
 	line-height: 40px;
@@ -232,7 +243,7 @@ header{
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background-color: #EC7263;
+	background-color: #3e84da;
 	border-radius: 5px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
@@ -339,7 +350,7 @@ header{
 	left: 0;
 	width: 80%;
 	height: 2px;
-	background-color: #EC7263;
+	background-color: #3e84da;
 	-webkit-transform: translateY(-50%) scaleY(5);
 		-ms-transform: translateY(-50%) scaleY(5);
 			transform: translateY(-50%) scaleY(5);
@@ -381,9 +392,6 @@ nav {
 .top-nav a:hover {
 	color: #3e84da;
 }
-/* .back{
-	/* background: url(./static/img/back.jpg) center no-repeat; */
-	/* background-image: url(static/img/back.jpg) */
 .main-header {
 	padding-top: 200px;
 	padding-bottom: 160px;/*
@@ -1100,10 +1108,5 @@ footer p{
 	.popup-form{
 		margin-top: 0px;
 	}
-
-	/* Basic styles */
-  
-  
-
 	
 }
