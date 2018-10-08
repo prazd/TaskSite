@@ -2,6 +2,7 @@
     <main class="back">
 <div class="project" id="project">
 			<div class="wrapper">
+				<link rel="shortcut icon" href="static/img/icon.png" type="image/png">
 					<h2>FAQ</h2>
 					<p>1. В приложении есть два способа регистрации: Как волонтер("Хочу помочь") и как человек с ограниченными возможностями.("Нужна помощь")</p>
 					<div class="faq-img">
