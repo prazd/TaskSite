@@ -1,7 +1,5 @@
 <template>
     <main class="back">
-
-	  <div class="main-header parallax--bg">
 <div class="project" id="project">
 			<div class="wrapper">
 					<h2>FAQ</h2>
@@ -16,15 +14,14 @@
 					<p>После этого он увидит точки на карте (Волонтеры которые могут ему помочь), а также окошко с номером сверху экрана.После этого ему достаточно нажать на точку и позвонить волонтеру, которому нужно сообщить всплывший номер.
 						Затем волонтер вбивает указанный номер у себя в поле, и видит местоположение человека попавшего в беду.На обоих сторонах можно наблюдать, насколько близко находятсяд друг к другу участники</p>
 					<p>Ниже представлены видео, в которых показана работа приложения(MVP версия), с различными сценариями (когда человек не смог оказать помощь - экстренное завершение, а также удачая версия помощи)</p>
-					<video src="static/img/invInitNeedHelp.mov" controls="controls" width="400" height="600"></video>
-					<video src="static/img/volAfterCallConnected.mov" controls="controls" width="400" height="600"></video>
-					<video src="static/img/stopHelpGoodReview.mov" controls="controls" width="400" height="600"></video>
-					<video src="static/img/invProperEndSessionAndExit.mov" controls="controls" width="400" height="600"></video>
-					<video src="static/img/invRecoverySession.mov" controls="controls" width="400" height="600"></video>
+					<video src="static/img/invInitNeedHelp.mov" controls="controls" height="600"></video>
+					<video src="static/img/volAfterCallConnected.mov" controls="controls" height="600"></video>
+					<video src="static/img/stopHelpGoodReview.mov" controls="controls" height="600"></video>
+					<video src="static/img/invProperEndSessionAndExit.mov" controls="controls"  height="600"></video>
+					<video src="static/img/invRecoverySession.mov" controls="controls"height="600"></video>
 					<p>В дальнейшем планируется добавить чат, возможность строить путь от точки A до точки B(от человека нуждающегося в помощи, до оказывающего помощь), а также учитывать отзывы людей о волонтерах(количество оценок "Хорошо" или "Плохо") и выделять людей с высоким рейтингом.</p>
 				</div>
 		</div>
-</div>
 
 </main>
 </template>
